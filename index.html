@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+    <title>PhishGuard AI - Phishing Detection</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+      
+      #root {
+        width: 100%;
+        min-height: 100vh;
+      }
+      
+      /* Extension popup specific styles */
+      @media (max-width: 500px) {
+        body {
+          width: 100vw;
+          min-width: 100vw;
+        }
+      }
+      
+      /* For extension popup (typically 400-500px wide) */
+      @media (min-width: 320px) and (max-width: 600px) {
+        body {
+          width: 100%;
+          max-width: 100vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
